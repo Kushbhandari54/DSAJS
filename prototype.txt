@@ -1,0 +1,29 @@
+Topic: JavaScript Prototypes & Prototype Chain
+
+What is a Prototype?
+In JavaScript, every object has a special hidden property called [[Prototype]], which is used to inherit properties and methods from another object.
+This is known as prototypal inheritance.
+
+Prototype Chain
+If a property or method is not found in an object, JavaScript looks for it in the object's prototype.
+This continues up the chain until it reaches Object.prototype, which is the top-level prototype.
+
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.greet = function() {
+  console.log(`Hello, my name is ${this.name}`);
+};
+
+const user = new Person("Kush");
+user.greet(); // Hello, my name is Kush
+
+console.log(user.__proto__ === Person.prototype); // true
+console.log(Person.prototype.__proto__ === Object.prototype); // true
+console.log(Object.prototype.__proto__); // null
+
+How it Works:
+user.greet() looks for greet() inside user → Not found.
+It checks user.__proto__ (which is Person.prototype) → Found and executed.
+If it wasn’t there, JavaScript would continue checking Object.prototype.

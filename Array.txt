@@ -1,0 +1,4 @@
+#Try sorting in descending order without reversing using a custom comparator:
+
+books.sort((a, b) => b.localeCompare(a)); // Sort in reverse order directly
+console.log(books);
