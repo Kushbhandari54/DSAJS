@@ -1,0 +1,28 @@
+// DOM Manipulation;
+
+// Basic Dom methods
+
+// 1. Selecting Elements:
+// document.getElementById(id);
+// document.getElementsByClassName(className);
+// document.getElementsByTagName(tagName);
+// document.querySelector(selector);
+// document.querySelectorAll(selector);
+
+//2. Modifying Elements
+
+// .innerText: changes text
+// .innerHTML: change the entire html inside an element
+// .setAttribute(name,value): Modify attribute like src, href etc
+// .style.property : Modify css style.
+
+// 3. Creating & Removing Elements
+
+// document.createElement(tagName);
+// element.appendChild(childElement)
+// element.removeChild(childElement)
+
+// 4. Handling Events
+
+// .addEventListener(event,function)
+// onClick, onMouseOver, onChange etc.
