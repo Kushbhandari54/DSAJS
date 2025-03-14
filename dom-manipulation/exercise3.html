@@ -1,0 +1,28 @@
+<!-- Exercise 3: Add New List Items -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New List Items</title>
+  </head>
+  <body>
+    <h1>Add New List Items to List</h1>
+    <ul id="myList">
+      <li>Item 1</li>
+    </ul>
+    <button id="listItem">Add Items</button>
+    <script>
+      document
+        .getElementById("listItem")
+        .addEventListener("click", function () {
+          const li = document.createElement("li");
+          li.innerText = `Item ${
+            document.getElementById("myList").children.length + 1
+          }`;
+          document.getElementById("myList").appendChild(li);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4: Hide and Show Text</title>
+  </head>
+  <body>
+    <h1>Exercise 4: Hide and Show Text</h1>
+    <h2>
+      Objective: Toggle the visibility of a paragraph when clicking a button.
+    </h2>
+    <p id="toggleText">This text will be toggled.</p>
+    <button id="toggleBtn">Hide</button>
+
+    <script>
+      document
+        .getElementById("toggleBtn")
+        .addEventListener("click", function () {
+          const text = document.getElementById("toggleText");
+          if (text.style.display === "none") {
+            text.style.display = "block";
+            this.innerText = "Hide";
+          } else {
+            text.style.display = "none";
+            this.innerText = "Show";
+          }
+        });
+    </script>
+  </body>
+</html>
