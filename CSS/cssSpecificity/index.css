@@ -1,0 +1,7 @@
+/* CSS Specificity (Which Rule Wins?) */
+/* CSS conflicts happen when multiple rules target the same element. */
+
+/* Element (div, p)	0, 0, 1
+Class (.card)	0, 1, 0
+ID (#main)	1, 0, 0
+Inline styles (style="color:red")	1, 0, 0, 0 */

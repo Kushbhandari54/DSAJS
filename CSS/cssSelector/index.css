@@ -1,0 +1,53 @@
+/* 1.Attribute Selector */
+
+input[type="text"] {
+  border: 1px solid red;
+}
+
+/* Other options:
+
+[attribute] → Selects elements with that attribute
+[attribute="value"] → Exact match
+[attribute^="value"] → Starts with
+[attribute$="value"] → Ends with
+[attribute*="value"] → Contains
+
+Example: Style all links that open in a new tab.
+a[target="_blank"] {
+  color: red;
+}
+
+*/
+
+/* 2. :nth-child() & :nth-of-type() */
+li:nth-child(odd) {
+  background-color: aqua
+    /* Every odd child */
+}
+
+li:nth-of-type(3n) {
+  color: red
+    /* Every 3rd child */
+}
+
+/* 3. :not() Selector
+Excludes elements from selection.
+*/
+button:not(.primary) {
+  background: gray;
+}
+
+/* This targets all buttons except those with .primary class. */
+
+/* 4. ::before & ::after (Pseudo-elements)
+Used for adding content before or after an element.
+*/
+h1::before {
+  content: "";
+}
+
+h1::after {
+  content: ""
+}
+
+/* This adds emojis before and after <h1>. */
