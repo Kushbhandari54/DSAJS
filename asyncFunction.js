@@ -1,7 +1,9 @@
-async function name(params) {
+async function name(params, callback) {
   return setTimeout(() => {
-    return "Hello " + params;
+    return callback("Hello " + params);
   }, 3000);
 }
 
-console.log(name("kush"));
+name("World", (result) => {
+  console.log(result);
+});
