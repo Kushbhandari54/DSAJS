@@ -13,3 +13,7 @@ Promise.all([promise1, promise2, promise3])
 // syntax: Promise.all([p1,p2,p3])
 
 // If one promise fails, others are not cancelled, but their results are ignored.
+
+// Promise.any // any
+// Promise.allSetteled // [P1,P2,P3]
+// Promise.race // first Success promise result

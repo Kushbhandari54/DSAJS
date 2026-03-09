@@ -10,3 +10,4 @@ console.log(typeof number); // number
 console.log(typeof string1); // string
 console.log(typeof isTrue); // boolean
 console.log(typeof NaN); // number
+console.log(typeof undefined);
